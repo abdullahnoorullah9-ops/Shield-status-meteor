@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "shieldstatus",
+  "version": "${version}",
+  "name": "Shield Status",
+  "description": "Shows a green 'SHIELD UP' or red 'SHIELD DISABLED' indicator on the player you are looking at.",
+  "authors": [],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.shieldstatus.ShieldStatusClient"]
+  },
+  "mixins": ["shieldstatus.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
